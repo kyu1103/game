@@ -62,7 +62,6 @@
 
 		<div id="wrap">
 			<h1 style="text-align:center;">숨은 캐릭 찾기</h1>
-			<!--<p class="info">※ 제한시간 1분안에 숨은캐릭<span>(총 ??개)</span>찾기</p>-->
 			<div class="game_wrap">
 				<div class="game">
 					<img src="img/img1.jpg" usemap="#map1" alt="img" />
@@ -83,7 +82,7 @@
 
 
  * START를 클릭하면 시작합니다
- * 제한시간 30초안에 숨어있는 모든 캐릭 ??명을 찾으면 성공입니다
+ * 제한시간 15초안에 숨어있는 모든 캐릭 ??명을 찾으면 성공입니다
  * 제한시간 내에 찾지 못할 시 Game Over됩니다
  * 숨어 있는 캐릭을 선택해서 빨간 동그라미가 그려지면 찾아진겁니다
    (좌표 오류가 있을때는 캐릭이 보이는 곳의 아무곳이나 클릭하다보면
@@ -136,7 +135,7 @@
 
 		// 시작
 		$('.game_wrap div.start').on('click', function(){
-			var gTime = 30000;
+			var gTime = 15000;
 			$('.game_wrap div.start, .game_wrap div.explain, .game_wrap div.dimm, #wrap p.info').fadeOut('fast');
 			$('.status_bar div.gage').animate({'width':'100%'}, gTime);
 
